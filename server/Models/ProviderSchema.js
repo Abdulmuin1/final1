@@ -1,9 +1,8 @@
 import mongoose from "mongoose";
 
 const providerSchema=mongoose.Schema({
-    Id:{
-type:Number,
-required:[true,"please insert the Id"]
+    id:{
+type:String
     },
     name:{
         type:String,
