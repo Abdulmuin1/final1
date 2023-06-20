@@ -8,7 +8,7 @@ type:String
         type:String,
         required:[true,"please insert the name"]
     },
-    amount:{
+    countInStock:{
         type:Number
     },
     price:{
@@ -18,7 +18,21 @@ type:String
     description:String,
     image:{
         type:String
+    },
+    catagory:{
+        type:String
+    },
+    brand:{
+    type:String},
+    tagNumber:{
+        type:String
+    },
+    providerEmail:{
+        type:String
     }
+
+
 });
     const Provider=mongoose.model("Provider",providerSchema);
     export default Provider;
+    
